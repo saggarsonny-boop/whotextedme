@@ -28,3 +28,12 @@ body {
 
 a { color: var(--gold); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+@keyframes hive-planet-spin {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+.hive-planet {
+  animation: hive-planet-spin 12s linear infinite;
+  display: inline-block;
+}
